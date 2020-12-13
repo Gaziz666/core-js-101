@@ -79,6 +79,7 @@ function getPasswordValidator(minLength) {
   const regEx = new RegExp(
     `(?=^\\w)(?=[a-zA-Z0-9]*([0-9]))(?=[a-zA-Z0-9]*[A-Z])(?=[a-zA-Z0-9]*[a-z])\\w{${minLength},}`,
   );
+
   return regEx;
 }
 
